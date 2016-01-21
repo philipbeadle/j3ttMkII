@@ -1,0 +1,16 @@
+<template name="howToAddAutomationToAStory">
+  <h1>howToAddAutomationToAStory</h1>
+
+  <p>
+    Stories are written as free form HTML to give maximum expression to the author. The author can add images, video
+    and any other artefacts that will help the end customer as well as the developers of the application.
+  </p>
+  <p>
+    The process of automating the story is done by either adding a custom attribute to existing HTML elements or by
+    adding a custom tag.  The attribute is auto="methodName" where all of the text inside the tag is passed to the method so
+    that the method can be reused with different parameters.  So if the step is in a list item the li tag would look like
+  <pre>&lt;li auto="methodName"&gt;This is the content of the step to be autoamated.  It will be passed to the method.&lt;/li&gt;</pre>
+    <br/>
+    The custom tag will be <pre>&lt;step auto="methodName"&gt;This is the content of the step to be autoamated.  It will be passed to the method.&lt;/step&gt;</pre>
+  </p>
+</template>
